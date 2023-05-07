@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Commodi-T Gold</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"></div>
+      <h1>Commodi-T Gold</h1>
+      <div class="card">
+        <h2>Dashboard</h2>
+        <p>Gold Token Balance: <span id="balance"></span></p>
+      </div>
+      <div class="card">
+        <h2>Purchase Gold Token</h2>
+        <form>
+          <div class="form-group">
+            <label for="purchase-amount">Amount:</label>
+            <input type="number" id="purchase-amount" name="purchase-amount" min="1" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Purchase</button>
+          </div>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Sell Gold Token</h2>
+        <form>
+          <div class="form-group">
+            <label for="sell-amount">Amount:</label>
+            <input type="number" id="sell-amount" name="sell-amount" min="1" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Sell</button>
+          </div>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Redeem Gold Token</h2>
+        <form>
+          <div class="form-group">
+            <label for="redeem-amount">Amount:</label>
+            <input type="number" id="redeem-amount" name="redeem-amount" min="1" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Redeem</button>
+          </div>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Profile</h2>
+        <p>Name: <span id="name"></span></p>
+        <p>Email: <span id="email"></span></p>
+      </div>
+      <div class="alert success" style="display: none;">Success!</div>
+      <div class="alert error" style="display: none;">Error!</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
